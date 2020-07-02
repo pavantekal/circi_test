@@ -1,4 +1,4 @@
 function stringExport(string) {
-    return string.length()
+    return string
 }
 module.exports = stringExport
