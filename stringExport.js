@@ -1,4 +1,4 @@
-function stringExport(string) {
-    return string
+function stringExport(strings) {
+    return strings
 }
 module.exports = stringExport
