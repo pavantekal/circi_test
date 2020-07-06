@@ -9,7 +9,7 @@ jobs:
       - run: 
           name: Trigger job 2
           command: |
-              curl -X POST https://circleci.com/api/v1.1/project/github/pavantekal/nightwatch_pipeline/master?circle-token='62d4520913868e413de72e1e2c006bcba4820519'
+              curl -X POST https://circleci.com/api/v1/project/pavantekal/nightwatch_pipeline/tree/master?circle-token='62d4520913868e413de72e1e2c006bcba4820519'
       - checkout
       - node/with-cache:
           steps:
