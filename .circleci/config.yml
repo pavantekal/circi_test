@@ -9,6 +9,9 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - command: curl -u ${fc37a521b7425c533c2be1344acc6271f5bb07b7}: \
+     -d build_parameters[nightwatch_pipeline]=deploy_docker \
+     https://circleci.com/api/v1.1/project/<github>/<pavantekal>/<nightwatch_pipeline>/tree/<master>
             - run: npm install
             - run: npm test
 workflows:
